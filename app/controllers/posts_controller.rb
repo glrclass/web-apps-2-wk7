@@ -23,4 +23,3 @@ class PostsController < ApplicationController
   #   # redirect user
   redirect_to "/posts"
   end
-  # end
