@@ -6,6 +6,18 @@ Rails.application.routes.draw do
 
   resources "companies"
   # get("/companies", {:controller => "companies", :action => "index"})
+  
+  # new company form: 
+  # get("/companies/new", {:controller => "companies", :action => "new"})
+  
+  # insert company into database:
+  # post("/companies", {:controller => "companies", :action => "create"})
+  
+  # details page for companies:
+  # get("/company_details?id=3")
+  # get("/companies/:id", {:controller => "companies", :action => "show"})
+
+
   resources "contacts"
   # get("/contacts", {:controller => "contacts", :action => "index"})
 
