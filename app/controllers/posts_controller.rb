@@ -11,15 +11,16 @@ class PostsController < ApplicationController
   end
 
   def create
-  #   # start with a new Post
+  # start with a new Post
     @post = Post.new
-  #   # assign user-entered form data to Post's columns
+  # assign user-entered form data to Post's columns
     @post["author"] = params["author"] # params should be the name in the new.html.erb file
     @post["body"] = params["body"]
     @post["image"] = params["image"]
-
-  #   # save Post row
+  # save Post row
     @post.save
-  #   # redirect user
+  # redirect user
   redirect_to "/posts"
   end
+
+end
